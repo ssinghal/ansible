@@ -1,0 +1,7 @@
+---
+- hosts: ausyd23as34v
+  remote_user: jboss6
+
+  tasks:
+   - name: Sonata server restart
+     shell: "ps"
