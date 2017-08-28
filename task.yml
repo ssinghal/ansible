@@ -4,4 +4,4 @@
 
   tasks:
    - name: Sonata server restart
-     shell: "ps"
+     shell: "ps -ef|grep java"
