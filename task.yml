@@ -1,5 +1,4 @@
 ---
-- hosts: ausyd23as34v
-  tasks:
+tasks:
    - name: Sonata server restart
      shell: "ps -ef|grep java"
