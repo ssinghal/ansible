@@ -1,6 +1,9 @@
 ---
--- hosts: ausyd23as34v
-   tasks:
-      - name: Sonata server restart
-        shell: "ps -ef|grep java"
- 
+- hosts: ausyd23as34v  
+  remote_user: jboss6
+  
+  tasks:
+   - name: Sonata server restart
+     script: /tmp/process.sh --some-arguments "Start"
+     args:       
+        creates: /tmp/process.txt
